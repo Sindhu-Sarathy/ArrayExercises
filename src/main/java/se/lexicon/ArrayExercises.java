@@ -31,6 +31,8 @@ public class ArrayExercises {
         OddAndEvenArray();
         System.out.println("\n");
         RemoveDuplicates();
+        System.out.println("\n");
+        MultiplicationTable();
     }
 
 
@@ -150,4 +152,22 @@ public class ArrayExercises {
         }
     }
 
+    public static void MultiplicationTable(){
+        int[][] table=new int[10][10];
+        int size=10;
+
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                table[i][j]=(i+1)*(j+1);
+            }
+        }
+
+        System.out.println("The multiplication table is: ");
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                System.out.printf("%4d",table[i][j]);
+            }
+            System.out.println();
+        }
+    }
 }
